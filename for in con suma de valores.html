@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in con suma de valores</title>
+
+
+
+
+</head>
+
+<body>
+    <script>
+        var diasMes = {
+            enero: 31,
+            febrero: 28,
+            marzo: 31,
+            abril: 30,
+            mayo: 31
+        }
+
+
+
+        for (mes in diasMes) {
+
+            document.write(mes + "<br>");
+            document.write(diasMes[mes] + "<br>");
+            document.write("el mes de " + mes + " tiene " + diasMes[mes] + " dias <br><br>");
+
+        }
+
+        let totaldias = 0
+        for (mes in diasMes) {
+            totaldias += diasMes[mes];
+
+        }
+        document.write("en total son " +totaldias+ " dias");
+
+/* se puede abreviar asi:
+
+ let totaldias = 0
+        for (mes in diasMes) {
+           
+            document.write(mes + "<br>");
+            document.write(diasMes[mes] + "<br>");
+            document.write("el mes de " + mes + " tiene " + diasMes[mes] + " dias <br><br>");
+            totaldias += diasMes[mes];
+
+        }
+        document.write("en total son " +totaldias+ " dias <br>");
+*/
+
+    </script>
+</body>
+
+</html>
